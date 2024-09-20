@@ -8,8 +8,47 @@ namespace Terulet
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void terulet()
         {
+            Console.WriteLine("Téglalap területének számítása.");
+
+
+            
+
+            int a;
+            int b;
+            int T;
+
+
+            do
+            {
+                Console.WriteLine("Kérem 'a' oldal értékét (0> kell lennie): ");
+                a = int.Parse(Console.ReadLine());
+            } while (a<=0);
+
+            do
+            {
+                Console.WriteLine("Kérem 'b' oldal értékét (0> kell lennie): ");
+                b = int.Parse(Console.ReadLine());
+            } while (b<=0);
+
+            T = a * b;
+
+            Console.WriteLine($"A téglalap területe: {T}");
+
+
+
+
+
+            a = Convert.ToInt32(Console.ReadLine()); 
+            b = Convert.ToInt32(Console.ReadLine());
+
+            Console.ReadKey();
+            
         }
-    }
+        static void Main(string[] args)
+        {  terulet(); }
+
+
+          }
 }
